@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking - Book Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Ticket</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="booking.html">Book Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Fill in Your Details</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="movie">Movie</option>
+                    <option value="concert">Concert</option>
+                    <option value="travel">Travel</option>
+                </select>
+
+                <label for="tickets">Number of Tickets:</label>
+                <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+
+                <button type="submit" class="button">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vibrant Ticket Booking. All rights reserved.</p>
+    </footer>
+</body>
+</html>
